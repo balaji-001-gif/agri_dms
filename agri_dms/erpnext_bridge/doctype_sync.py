@@ -42,7 +42,22 @@ def sync_machine_to_item(doc, method=None):
         item.item_code = doc.machine_code
     
     item.item_name = doc.machine_name
-    item.item_group = doc.category
+
+    # Resolve category hash to readable name for ERPNext Item Group
+    category_name = "All Item Groups"
+    if doc.category:
+        category_name = frappe.db.get_value("Machine Category", doc.category, "category_name") or "All Item Groups"
+        # Ensure the Item Group exists in ERPNext
+        if not frappe.db.exists("Item Group", category_name):
+            ig = frappe.get_doc({
+                "doctype": "Item Group",
+                "item_group_name": category_name,
+                "parent_item_group": "All Item Groups"
+            })
+            ig.insert(ignore_permissions=True)
+            frappe.db.commit()
+
+    item.item_group = category_name
     item.stock_uom = "Nos"
     item.is_stock_item = 1
     item.valuation_rate = doc.dealer_price
