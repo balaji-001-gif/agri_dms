@@ -7,6 +7,20 @@ app_description = "Distributor Management System for Agriculture Machine Manufac
 app_email = "admin@agri-dms.com"
 app_license = "MIT"
 
+# Install Hooks
+# -------------
+after_install = "agri_dms.agri_dms.agri_dms.setup_roles.create_roles"
+after_migrate = "agri_dms.agri_dms.agri_dms.setup_roles.create_roles"
+
+# Fixtures
+# --------
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [["role_name", "in", ["DMS Admin", "DMS Distributor Manager", "DMS Sales Executive", "DMS Finance"]]]
+    }
+]
+
 # DocType Highlights
 # -----------------
 # Manufacturer
