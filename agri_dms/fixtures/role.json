@@ -1,24 +1,28 @@
 [
  {
   "doctype": "Role",
+  "name": "DMS Admin",
   "role_name": "DMS Admin",
   "desk_access": 1,
   "is_custom": 1
  },
  {
   "doctype": "Role",
+  "name": "DMS Distributor Manager",
   "role_name": "DMS Distributor Manager",
   "desk_access": 1,
   "is_custom": 1
  },
  {
   "doctype": "Role",
+  "name": "DMS Sales Executive",
   "role_name": "DMS Sales Executive",
   "desk_access": 1,
   "is_custom": 1
  },
  {
   "doctype": "Role",
+  "name": "DMS Finance",
   "role_name": "DMS Finance",
   "desk_access": 1,
   "is_custom": 1
