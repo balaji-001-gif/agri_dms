@@ -1,1 +1,6 @@
-{}
+{
+    "agri_dms_main": [
+        "public/js/agri_dms.js",
+        "public/css/agri_dms.css"
+    ]
+}
