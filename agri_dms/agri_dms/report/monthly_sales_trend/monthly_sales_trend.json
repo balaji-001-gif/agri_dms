@@ -2,7 +2,7 @@
  "doctype": "Report",
  "name": "Monthly Sales Trend",
  "module": "Agri DMS",
- "report_type": "Script Report",
+ "report_type": "Query Report",
  "ref_doctype": "Customer Sale",
  "is_standard": "Yes",
  "columns": [],
