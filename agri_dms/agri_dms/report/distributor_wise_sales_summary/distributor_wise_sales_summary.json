@@ -3,6 +3,7 @@
  "name": "Distributor-wise Sales Summary",
  "module": "Agri DMS",
  "report_type": "Script Report",
+ "ref_doctype": "Customer Sale",
  "is_standard": "Yes",
  "columns": [],
  "filters": []
