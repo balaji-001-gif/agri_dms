@@ -21,6 +21,7 @@ def setup_demo_data():
             })
             doc.insert(ignore_permissions=True)
             print(f"Created Category: {cat['name']}")
+    frappe.db.commit()
 
     # 2. Manufacturers
     manufacturers = [
@@ -38,6 +39,7 @@ def setup_demo_data():
             })
             doc.insert(ignore_permissions=True)
             print(f"Created Manufacturer: {mfr['name']}")
+    frappe.db.commit()
 
     # 3. Machines (Products)
     machines = [
@@ -60,6 +62,7 @@ def setup_demo_data():
             })
             doc.insert(ignore_permissions=True)
             print(f"Created Machine: {mac['name']}")
+    frappe.db.commit()
 
     # 4. Region
     if not frappe.db.exists("Region", "South India"):
@@ -71,6 +74,7 @@ def setup_demo_data():
         })
         region.insert(ignore_permissions=True)
         print("Created Region: South India")
+    frappe.db.commit()
 
     # 5. Distributor
     if not frappe.db.exists("Distributor", "Global Agri-Solutions"):
@@ -92,6 +96,7 @@ def setup_demo_data():
         })
         dist.insert(ignore_permissions=True)
         print("Created Distributor: Global Agri-Solutions")
+    frappe.db.commit()
 
     # 6. Sample Sales (Draft)
     if not frappe.db.exists("Customer Sale", {"customer_name": "Farmer Venkat"}):
