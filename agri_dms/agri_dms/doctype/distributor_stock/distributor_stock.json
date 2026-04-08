@@ -1,0 +1,54 @@
+{
+ "doctype": "DocType",
+ "name": "Distributor Stock",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "distributor",
+   "label": "Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "machine",
+   "label": "Machine",
+   "fieldtype": "Link",
+   "options": "Machine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "label": "Serial No",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "qty_in_hand",
+   "label": "Qty In Hand",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "label": "Location",
+   "fieldtype": "Data"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

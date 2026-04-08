@@ -1,0 +1,41 @@
+{
+ "doctype": "DocType",
+ "name": "Commission Slab",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "from_amount",
+   "label": "From Amount",
+   "fieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_amount",
+   "label": "To Amount",
+   "fieldtype": "Currency"
+  },
+  {
+   "fieldname": "commission_pct",
+   "label": "Commission %",
+   "fieldtype": "Float",
+   "reqd": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 1,
+ "naming_rule": "Set by user"
+}

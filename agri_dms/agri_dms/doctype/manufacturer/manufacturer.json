@@ -1,0 +1,113 @@
+{
+ "doctype": "DocType",
+ "name": "Manufacturer",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "manufacturer_name",
+   "label": "Manufacturer Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "manufacturer_code",
+   "label": "Manufacturer Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "label": "Country",
+   "fieldtype": "Link",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "label": "State",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "address",
+   "label": "Address",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "contact_person",
+   "label": "Contact Person",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "contact_email",
+   "label": "Contact Email",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "contact_phone",
+   "label": "Contact Phone",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "gst_number",
+   "label": "GST Number",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "pan_number",
+   "label": "PAN Number",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "bank_account",
+   "label": "Bank Account",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "bank_ifsc",
+   "label": "IFSC Code",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "logo",
+   "label": "Logo",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Active\nInactive\nBlacklisted",
+   "reqd": 1,
+   "default": "Active"
+  },
+  {
+   "fieldname": "erpnext_supplier_id",
+   "label": "ERPNext Supplier ID",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "notes",
+   "label": "Notes",
+   "fieldtype": "Text"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

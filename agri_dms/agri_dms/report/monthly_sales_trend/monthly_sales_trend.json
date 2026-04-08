@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Monthly Sales Trend",
+ "module": "Agri DMS",
+ "report_type": "Query Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

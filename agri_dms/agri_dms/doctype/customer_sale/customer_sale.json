@@ -1,0 +1,77 @@
+{
+ "doctype": "DocType",
+ "name": "Customer Sale",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "sale_number",
+   "label": "Sale Number",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "distributor",
+   "label": "Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "label": "Customer Name",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sale_date",
+   "label": "Sale Date",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "items",
+   "label": "Items",
+   "fieldtype": "Table",
+   "options": "Sale Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "label": "Total Amount",
+   "fieldtype": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "erpnext_sinv_id",
+   "label": "ERPNext Invoice ID",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nConfirmed\nDelivered\nCancelled",
+   "reqd": 1,
+   "default": "Draft"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

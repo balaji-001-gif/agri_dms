@@ -1,0 +1,54 @@
+{
+ "doctype": "DocType",
+ "name": "Region",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "region_name",
+   "label": "Region Name",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region_code",
+   "label": "Region Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "states_covered",
+   "label": "States Covered",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "regional_manager",
+   "label": "Regional Manager",
+   "fieldtype": "Link",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "is_active",
+   "label": "Active",
+   "fieldtype": "Check",
+   "default": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

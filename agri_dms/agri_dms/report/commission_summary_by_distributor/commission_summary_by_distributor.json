@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Commission Summary by Distributor",
+ "module": "Agri DMS",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

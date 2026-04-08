@@ -1,0 +1,51 @@
+{
+ "doctype": "DocType",
+ "name": "Distributor Manufacturer Mapping",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "manufacturer",
+   "label": "Manufacturer",
+   "fieldtype": "Link",
+   "options": "Manufacturer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "authorization_number",
+   "label": "Auth Number",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "valid_from",
+   "label": "Valid From",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "valid_to",
+   "label": "Valid To",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "target_amount",
+   "label": "Annual Target",
+   "fieldtype": "Currency"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 1,
+ "naming_rule": "Set by user"
+}

@@ -1,0 +1,125 @@
+{
+ "doctype": "DocType",
+ "name": "Machine",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "machine_name",
+   "label": "Machine Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "machine_code",
+   "label": "Machine Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "label": "Manufacturer",
+   "fieldtype": "Link",
+   "options": "Manufacturer",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "category",
+   "label": "Category",
+   "fieldtype": "Link",
+   "options": "Machine Category",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "model_year",
+   "label": "Model Year",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "engine_power_hp",
+   "label": "Engine Power (HP)",
+   "fieldtype": "Float"
+  },
+  {
+   "fieldname": "weight_kg",
+   "label": "Weight (kg)",
+   "fieldtype": "Float"
+  },
+  {
+   "fieldname": "mrp",
+   "label": "MRP",
+   "fieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dealer_price",
+   "label": "Dealer Price",
+   "fieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hsn_code",
+   "label": "HSN Code",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "gst_rate_pct",
+   "label": "GST Rate (%)",
+   "fieldtype": "Float",
+   "reqd": 1
+  },
+  {
+   "fieldname": "erpnext_item_code",
+   "label": "ERPNext Item Code",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "warranty_months",
+   "label": "Warranty (Months)",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "image",
+   "label": "Product Image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "brochure",
+   "label": "Brochure",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Active\nDiscontinued\nComing Soon",
+   "reqd": 1,
+   "default": "Active"
+  },
+  {
+   "fieldname": "description",
+   "label": "Description",
+   "fieldtype": "Text"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

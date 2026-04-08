@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Machine-wise Sales Analysis",
+ "module": "Agri DMS",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

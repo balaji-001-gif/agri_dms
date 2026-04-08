@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Slow-Moving Stock",
+ "module": "Agri DMS",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

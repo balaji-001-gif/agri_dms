@@ -1,0 +1,59 @@
+{
+ "doctype": "DocType",
+ "name": "Goods Receipt Note",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "distributor",
+   "label": "Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "label": "Purchase Order",
+   "fieldtype": "Link",
+   "options": "Distributor Purchase Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receipt_date",
+   "label": "Receipt Date",
+   "fieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items",
+   "label": "Items",
+   "fieldtype": "Table",
+   "options": "GRN Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nReceived\nDiscrepancy Reported",
+   "reqd": 1,
+   "default": "Draft"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Distributor Stock Ledger",
+ "module": "Agri DMS",
+ "report_type": "Query Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

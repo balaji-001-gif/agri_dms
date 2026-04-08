@@ -1,0 +1,60 @@
+{
+ "doctype": "DocType",
+ "name": "Machine Category",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "category_name",
+   "label": "Category Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "category_code",
+   "label": "Category Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_category",
+   "label": "Parent Category",
+   "fieldtype": "Link",
+   "options": "Machine Category"
+  },
+  {
+   "fieldname": "description",
+   "label": "Description",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "image",
+   "label": "Image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "is_active",
+   "label": "Is Active",
+   "fieldtype": "Check",
+   "default": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

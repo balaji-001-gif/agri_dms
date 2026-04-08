@@ -1,0 +1,9 @@
+{
+ "doctype": "Report",
+ "name": "Distributor Target vs Achievement",
+ "module": "Agri DMS",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "columns": [],
+ "filters": []
+}

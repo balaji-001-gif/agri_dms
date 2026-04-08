@@ -1,0 +1,49 @@
+{
+ "doctype": "DocType",
+ "name": "PO Item",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "machine",
+   "label": "Machine",
+   "fieldtype": "Link",
+   "options": "Machine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "label": "Qty",
+   "fieldtype": "Int",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_price",
+   "label": "Dealer Price",
+   "fieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "label": "Amount",
+   "fieldtype": "Currency",
+   "read_only": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 1,
+ "naming_rule": "Set by user"
+}

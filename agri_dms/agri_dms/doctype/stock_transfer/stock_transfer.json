@@ -1,0 +1,58 @@
+{
+ "doctype": "DocType",
+ "name": "Stock Transfer",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "transfer_type",
+   "label": "Transfer Type",
+   "fieldtype": "Select",
+   "options": "Distributor-to-Distributor\nReturn to Manufacturer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_distributor",
+   "label": "From Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor"
+  },
+  {
+   "fieldname": "to_distributor",
+   "label": "To Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor"
+  },
+  {
+   "fieldname": "items",
+   "label": "Items",
+   "fieldtype": "Table",
+   "options": "Transfer Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nIn Transit\nReceived\nCancelled",
+   "reqd": 1,
+   "default": "Draft"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

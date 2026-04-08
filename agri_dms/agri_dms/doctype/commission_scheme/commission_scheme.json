@@ -1,0 +1,49 @@
+{
+ "doctype": "DocType",
+ "name": "Commission Scheme",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "scheme_name",
+   "label": "Scheme Name",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme_type",
+   "label": "Type",
+   "fieldtype": "Select",
+   "options": "Flat Rate\nSlab-Based\nTarget-Linked",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slabs",
+   "label": "Slabs",
+   "fieldtype": "Table",
+   "options": "Commission Slab"
+  },
+  {
+   "fieldname": "is_active",
+   "label": "Active",
+   "fieldtype": "Check",
+   "default": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

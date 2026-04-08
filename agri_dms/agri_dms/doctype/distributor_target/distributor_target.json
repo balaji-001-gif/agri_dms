@@ -1,0 +1,76 @@
+{
+ "doctype": "DocType",
+ "name": "Distributor Target",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "distributor",
+   "label": "Distributor",
+   "fieldtype": "Link",
+   "options": "Distributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "label": "Manufacturer",
+   "fieldtype": "Link",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "label": "Fiscal Year",
+   "fieldtype": "Link",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period",
+   "label": "Period",
+   "fieldtype": "Select",
+   "options": "Monthly\nQuarterly\nAnnual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_qty",
+   "label": "Target Qty",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "target_amount",
+   "label": "Target Amount",
+   "fieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "achievement_pct",
+   "label": "Achievement %",
+   "fieldtype": "Float",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nConfirmed\nAchieved\nMissed",
+   "reqd": 1,
+   "default": "Draft"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}

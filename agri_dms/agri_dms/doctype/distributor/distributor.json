@@ -1,0 +1,141 @@
+{
+ "doctype": "DocType",
+ "name": "Distributor",
+ "module": "Agri DMS",
+ "custom": 0,
+ "autoname": "hash",
+ "fields": [
+  {
+   "fieldname": "distributor_name",
+   "label": "Distributor Name",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "distributor_code",
+   "label": "Distributor Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "distributor_type",
+   "label": "Type",
+   "fieldtype": "Select",
+   "options": "Primary\nSecondary\nSub-Dealer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region",
+   "label": "Region",
+   "fieldtype": "Link",
+   "options": "Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "territory",
+   "label": "Territory",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "state",
+   "label": "State",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "label": "Pincode",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "address",
+   "label": "Address",
+   "fieldtype": "Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owner_name",
+   "label": "Owner Name",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_email",
+   "label": "Contact Email",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_phone",
+   "label": "Contact Phone",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_number",
+   "label": "GST Number",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pan_number",
+   "label": "PAN Number",
+   "fieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "credit_limit",
+   "label": "Credit Limit",
+   "fieldtype": "Currency"
+  },
+  {
+   "fieldname": "commission_scheme",
+   "label": "Commission Scheme",
+   "fieldtype": "Link",
+   "options": "Commission Scheme"
+  },
+  {
+   "fieldname": "assigned_manufacturers",
+   "label": "Assigned Manufacturers",
+   "fieldtype": "Table",
+   "options": "Distributor Manufacturer Mapping"
+  },
+  {
+   "fieldname": "erpnext_customer_id",
+   "label": "ERPNext Customer ID",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "kyc_status",
+   "label": "KYC Status",
+   "fieldtype": "Select",
+   "options": "Pending\nVerified\nRejected",
+   "reqd": 1,
+   "default": "Pending"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Active\nInactive\nSuspended",
+   "reqd": 1,
+   "default": "Active"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  }
+ ],
+ "is_submittable": 0,
+ "istable": 0,
+ "naming_rule": "Set by user"
+}
