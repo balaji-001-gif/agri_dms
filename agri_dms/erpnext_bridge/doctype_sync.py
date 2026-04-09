@@ -5,6 +5,8 @@ def sync_manufacturer_to_supplier(doc, method=None):
     """Sync Manufacturer to ERPNext Supplier"""
     if doc.erpnext_supplier_id:
         supplier = frappe.get_doc("Supplier", doc.erpnext_supplier_id)
+    elif frappe.db.exists("Supplier", doc.manufacturer_name):
+        supplier = frappe.get_doc("Supplier", doc.manufacturer_name)
     else:
         supplier = frappe.new_doc("Supplier")
         supplier.supplier_name = doc.manufacturer_name
@@ -32,6 +34,8 @@ def sync_distributor_to_customer(doc, method=None):
     """Sync Distributor to ERPNext Customer"""
     if doc.erpnext_customer_id:
         customer = frappe.get_doc("Customer", doc.erpnext_customer_id)
+    elif frappe.db.exists("Customer", doc.distributor_name):
+        customer = frappe.get_doc("Customer", doc.distributor_name)
     else:
         customer = frappe.new_doc("Customer")
         customer.customer_name = doc.distributor_name
@@ -59,6 +63,8 @@ def sync_machine_to_item(doc, method=None):
     """Sync Machine to ERPNext Item"""
     if doc.erpnext_item_code:
         item = frappe.get_doc("Item", doc.erpnext_item_code)
+    elif frappe.db.exists("Item", doc.machine_code):
+        item = frappe.get_doc("Item", doc.machine_code)
     else:
         item = frappe.new_doc("Item")
         item.item_code = doc.machine_code
