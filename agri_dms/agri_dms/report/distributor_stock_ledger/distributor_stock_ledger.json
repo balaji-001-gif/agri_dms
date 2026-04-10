@@ -7,6 +7,7 @@
  "is_standard": "Yes",
  "columns": [],
  "filters": [],
+ "query": "SELECT \n\tds.distributor, m.machine_name, ds.qty_in_hand, ds.location\nFROM `tabDistributor Stock` ds\nJOIN `tabMachine` m ON ds.machine = m.name\nWHERE ds.qty_in_hand > 0",
  "roles": [
   {
    "role": "DMS Admin"

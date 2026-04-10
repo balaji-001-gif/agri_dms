@@ -7,6 +7,7 @@
  "is_standard": "Yes",
  "columns": [],
  "filters": [],
+ "query": "SELECT \n\tMONTHNAME(sale_date) as month, \n\tYEAR(sale_date) as year, \n\tCOUNT(name) as orders, \n\tSUM(total_amount) as revenue\nFROM `tabCustomer Sale` \nWHERE status = 'Confirmed' \nGROUP BY YEAR(sale_date), MONTH(sale_date)",
  "roles": [
   {
    "role": "DMS Admin"
