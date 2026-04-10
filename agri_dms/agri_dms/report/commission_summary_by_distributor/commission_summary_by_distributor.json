@@ -6,5 +6,6 @@
  "ref_doctype": "Commission Ledger",
  "is_standard": "Yes",
  "columns": [],
- "filters": []
+ "filters": [],
+ "roles": "DMS Admin\nDMS Finance"
 }

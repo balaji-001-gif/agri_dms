@@ -9,10 +9,18 @@
  "is_standard": 0,
  "public": 1,
  "roles": [
-  {"role": "DMS Admin"},
-  {"role": "DMS Distributor Manager"},
-  {"role": "DMS Sales Executive"},
-  {"role": "DMS Finance"}
+  {
+   "role": "DMS Admin"
+  },
+  {
+   "role": "DMS Distributor Manager"
+  },
+  {
+   "role": "DMS Sales Executive"
+  },
+  {
+   "role": "DMS Finance"
+  }
  ],
  "shortcuts": [
   {
@@ -184,6 +192,18 @@
   {
    "label": "Distributor Ageing",
    "link_to": "Distributor Ageing and Outstanding",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "label": "Commission Summary",
+   "link_to": "Commission Summary by Distributor",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "label": "Slow Moving Stock",
+   "link_to": "Slow Moving Stock",
    "link_type": "Report",
    "type": "Link"
   }

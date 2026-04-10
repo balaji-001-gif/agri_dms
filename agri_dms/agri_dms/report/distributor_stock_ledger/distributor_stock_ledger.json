@@ -6,5 +6,6 @@
  "ref_doctype": "Distributor Stock",
  "is_standard": "Yes",
  "columns": [],
- "filters": []
+ "filters": [],
+ "roles": "DMS Admin\nDMS Distributor Manager\nDMS Sales Executive"
 }

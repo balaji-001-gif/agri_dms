@@ -1,7 +1,12 @@
 import frappe
 
 def create_roles():
-    roles = ["DMS Admin", "DMS Distributor Manager", "DMS Sales Executive", "DMS Finance"]
+    roles = [
+        "DMS Admin", 
+        "DMS Distributor Manager", 
+        "DMS Sales Executive", 
+        "DMS Finance"
+    ]
     for role_name in roles:
         if not frappe.db.exists("Role", role_name):
             role = frappe.get_doc({
